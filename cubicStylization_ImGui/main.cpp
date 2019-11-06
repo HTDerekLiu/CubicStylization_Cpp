@@ -18,7 +18,6 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include <profc.h>
 
 #ifndef MESH_PATH
 #define MESH_PATH "../../meshes/"
@@ -115,6 +114,7 @@ int main(int argc, char *argv[])
             ImGui::BulletText("Q/W    rotate x-axis");
             ImGui::BulletText("A/S      rotate y-axis");
             ImGui::BulletText("Z/X      rotate z-axis");
+            ImGui::BulletText("L      show edges");
             ImGui::Text(" ");
         }
         {

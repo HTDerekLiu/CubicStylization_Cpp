@@ -11,14 +11,12 @@ void cube_style_single_iteration(
     // local step
     MatrixXd RAll(3,V.rows()*3);
     {
-        PROFC_NODE("local step")
         fit_rotations_l1(V, U, RAll, data);
     }
 
     // global step
     MatrixXd Upre = U;
     {
-        PROFC_NODE("global step")
         VectorXd Rcol;
         igl::columnize(RAll, V.rows(), 2, Rcol);
         VectorXd Bcol = data.K * Rcol;

@@ -5,7 +5,6 @@
 #include <Eigen/Core>
 #include <igl/svd3x3.h>
 #include <igl/polar_svd.h>
-#include <profc.h>
 
 void orthogonal_procrustes(
 	const Eigen::Matrix3d & S,

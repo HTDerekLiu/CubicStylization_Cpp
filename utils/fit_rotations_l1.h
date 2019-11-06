@@ -10,7 +10,6 @@
 #include <igl/slice.h>
 #include <igl/parallel_for.h>
 #include <math.h> 
-#include <profc.h>
 
 void fit_rotations_l1(
 	const Eigen::MatrixXd & V,

@@ -2,7 +2,6 @@
 #define CUBE_STYLE_PRECOMPUTATION_H
 
 #include <iostream>
-#include <profc.h>
 #include <ctime>
 #include <vector>
 #include <Eigen/Core>
