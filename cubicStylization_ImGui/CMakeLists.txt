@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 SET(CMAKE_BUILD_TYPE release)
-project(cubeStyle)
+project(cubicStylization)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
