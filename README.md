@@ -22,7 +22,7 @@ This will create the excutable of the cubic stylization. To start the applicatio
 ```
 where the example meshes are provided in `/CubicStylization_Cpp/meshes`. Instructions of how to control the cubic stylization is listed on the side of the GUI. The demo is based on the Algorithm 1 in the [paper](https://arxiv.org/abs/1910.02926). 
 
-Please visit [CubicStylization_MATLAB](https://github.com/HTDerekLiu/CubicStylization_MATLAB) for a prototype implementation in MATLAB. If any questions, please contact Hsueh-Ti Derek Liu (hsuehtil@cs.toronto.edu).
+Please visit [CubicStylization_MATLAB](https://github.com/HTDerekLiu/CubicStylization_MATLAB) for a prototype implementation in MATLAB. Our code is licensed under [MPL2](https://www.mozilla.org/en-US/MPL/2.0/). If any questions, please contact Hsueh-Ti Derek Liu (hsuehtil@cs.toronto.edu).
 
 ### Bibtex
 ```
