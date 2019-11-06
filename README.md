@@ -8,7 +8,7 @@ We can start by cloning the repository ***with RECURSIVE option***
 ```
 git clone --recursive https://github.com/HTDerekLiu/CubicStylization_Cpp.git
 ```
-Once we clone the cubic stylization code, we offer an [ImGui](https://github.com/ocornut/imgui) version in `CubicStylization_Cpp/cubicStylization_ImGui` for one to play with the stylization interactively in the GUI. To compile the application, we can simply type these commands in the terminal
+Once we clone the cubic stylization code, we offer an [ImGui](https://github.com/ocornut/imgui) version in folder `cubicStylization_ImGui` for one to play with the stylization interactively in the GUI. To compile the application, we can simply type these commands in the terminal
 ```
 cd CubicStylization_Cpp/cubicStylization_ImGui
 mkdir build
