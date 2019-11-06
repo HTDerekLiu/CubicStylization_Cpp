@@ -1,3 +1,4 @@
 .DS_Store
 .vscode
 cubicStylization_ImGui/build
+cubicStylization_ImGui/*.obj
