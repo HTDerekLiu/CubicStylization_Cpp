@@ -3,6 +3,7 @@
 
 #include <Eigen/Core>
 #include <Eigen/Sparse>
+#include <limits>
 #include <igl/min_quad_with_fixed.h>
 
 struct cube_style_data
@@ -18,6 +19,7 @@ struct cube_style_data
 	double tao = 2;
 	double maxIter_ADMM = 100;
 	double objVal = 0;
+	double reldV = std::numeric_limits<float>::max();
 
 	std::vector<double> objHis;
 	std::vector<Eigen::MatrixXi> hEList;
@@ -54,6 +56,7 @@ struct cube_style_data
 		double tao = 2;
 		double maxIter_ADMM = 100;
 		double objVal = 0;
+		double reldV = std::numeric_limits<float>::max();
 
 		objHis.clear();
 		hEList.clear();

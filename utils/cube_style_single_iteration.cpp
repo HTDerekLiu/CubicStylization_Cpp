@@ -32,6 +32,6 @@ void cube_style_single_iteration(
     }
 
     // print optimization date
-    double reldV = (U-Upre).cwiseAbs().maxCoeff() / (U-V).cwiseAbs().maxCoeff();
+    data.reldV = (U-Upre).cwiseAbs().maxCoeff() / (U-V).cwiseAbs().maxCoeff();
     // cout << "reldV:" << scientific << reldV << ", obj:" << data.objVal << endl;
 }
