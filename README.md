@@ -4,7 +4,7 @@ Cubic stylization is a 3D stylization tool. Unlike image stylization (2D to 2D) 
 This is a C++ implementation based on "[Cubic Stylization](https://www.dgp.toronto.edu/projects/cubic-stylization/)" by [Hsueh-Ti Derek Liu](https://www.dgp.toronto.edu/~hsuehtil/) and [Alec Jacobson](https://www.cs.toronto.edu/~jacobson/). 
 
 ### Get Started
-We can start by cloning the repository ***with RECURSIVE option***
+We can start by cloning the repository ***with the RECURSIVE option***
 ```
 git clone --recursive https://github.com/HTDerekLiu/CubicStylization_Cpp.git
 ```
