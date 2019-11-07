@@ -37,7 +37,7 @@ This will create the excutable of the cubic stylization. To start the applicatio
 ```
 ./cubicStylization_bin [meshName] [lambda]
 ```
-where the example meshes are provided in `/CubicStylization_Cpp/meshes` and the _lambda_ parameter is the _cubeness_. Both demos are based on the Algorithm 1 in the [paper](https://arxiv.org/abs/1910.02926). 
+where the _lambda_ parameter controls the _cubeness_. This command line demo will save the output OBJ file in the directory `CubicStylization_Cpp/cubicStylization_cmd/`. Both demos are based on the Algorithm 1 in the [paper](https://arxiv.org/abs/1910.02926). 
 
 Please visit [CubicStylization_MATLAB](https://github.com/HTDerekLiu/CubicStylization_MATLAB) for a prototype implementation in MATLAB. Our code is licensed under [MPL2](https://www.mozilla.org/en-US/MPL/2.0/). If any questions, please contact Hsueh-Ti Derek Liu (hsuehtil@cs.toronto.edu).
 
