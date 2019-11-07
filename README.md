@@ -41,7 +41,7 @@ where the _lambda_ parameter controls the _cubeness_. This command line demo wil
 
 Please visit [CubicStylization_MATLAB](https://github.com/HTDerekLiu/CubicStylization_MATLAB) for a prototype implementation in MATLAB. Our code is licensed under [MPL2](https://www.mozilla.org/en-US/MPL/2.0/). If any questions, please contact Hsueh-Ti Derek Liu (hsuehtil@cs.toronto.edu).
 
-### Bibtex
+## Bibtex
 ```
 @article{Liu:CubicStyle:2019,
   title = {Cubic Stylization},
