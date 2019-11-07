@@ -5,6 +5,7 @@
 #include <cube_style_data.h>
 #include <cube_style_precomputation.h>
 #include <cube_style_single_iteration.h>
+#include <normalize_unitbox.h>
 
 #include <ctime>
 #include <vector>
@@ -48,6 +49,9 @@ int main(int argc, char *argv[])
         }
 		string file = MESH_PATH + meshName;
 		igl::readOBJ(file, V, F);
+        normalize_unitbox(V);
+        RowVector3d meanV = V.colwise().mean();
+        V = V.rowwise() - meanV;
         U = V;
 	}
 
@@ -77,8 +81,13 @@ int main(int argc, char *argv[])
     {
         string outputName = "cubic_";
         outputName.append(meshName);
-        string outFile = OUTPUT_PATH + outputName;
-        igl::writeOBJ(outFile,U,F);
+        string outputFile = OUTPUT_PATH + outputName;
+        igl::writeOBJ(outputFile,U,F);
+
+        string inputName = "input_";
+        inputName.append(meshName);
+        string inputFile = OUTPUT_PATH + inputName;
+        igl::writeOBJ(inputFile,V,F);
     }
 
     return 0;

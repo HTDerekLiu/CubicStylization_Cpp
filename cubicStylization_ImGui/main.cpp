@@ -54,7 +54,8 @@ int main(int argc, char *argv[])
 		string file = MESH_PATH + meshName;
 		igl::readOBJ(file, V, F);
 		normalize_unitbox(V);
-		V = V.array() - 0.5;
+        RowVector3d meanV = V.colwise().mean();
+        V = V.rowwise() - meanV;
         U = V;
         VO = V;
 	}
@@ -128,10 +129,17 @@ int main(int argc, char *argv[])
         }
         if (ImGui::Button("save output mesh", ImVec2(-1,0)))
 		{
-			string file = OUTPUT_PATH;
-            file.append(outputName);
-            file.append(".obj");
-			igl::writeOBJ(file, U, F);
+			string outputFile = OUTPUT_PATH;
+            outputFile.append("cubic_");
+            outputFile.append(outputName);
+            outputFile.append(".obj");
+			igl::writeOBJ(outputFile, U, F);
+
+            string inputFile = OUTPUT_PATH;
+            inputFile.append("input_");
+            inputFile.append(outputName);
+            inputFile.append(".obj");
+			igl::writeOBJ(inputFile, V, F);
 		}
         ImGui::End();
     };
