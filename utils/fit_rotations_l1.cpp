@@ -85,7 +85,7 @@ void fit_rotations_l1(
                     
                     // save objective
                     double objVal = 
-                        0.5*((R*dV-dU)*WVec.asDiagonal()*(R*dV-dU).transpose()).squaredNorm()
+                        0.5*((R*dV-dU)*WVec.asDiagonal()*(R*dV-dU).transpose()).trace()
                         + data.lambda * data.VA(ii) * (R*n).cwiseAbs().sum();
                     data.objValVec(ii) = objVal;
                     break;
